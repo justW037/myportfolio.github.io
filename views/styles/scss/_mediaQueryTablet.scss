@@ -1,0 +1,112 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        padding: 20px 50px;
+        overflow: hidden scroll;
+
+        .desktopNav {
+            display: inline-flex;
+            gap: 20vw;
+
+            .menu {
+                display: inline-flex;
+                gap: 4vw;
+            }
+        }
+        .mobileNav{
+            display: none;
+        }
+
+        #profile {
+            width: auto;
+            height: auto;
+            padding: 2vw;
+            margin-bottom: 20vh;
+
+            .big-logo {
+                text-align: center;
+                padding: 23vh 0px;
+            }
+
+            .section-text {
+                padding: 10vh 0px;
+            }
+        }
+
+        #about {
+            height: auto;
+            margin-bottom: 15vh;
+
+            .info {
+                display: flex;
+                gap: 5vw;
+
+                .test {
+                    padding: 5em 0px;
+
+                    .aboutImg {
+                        width: auto;
+                        height: 30vw;
+
+                    }
+                }
+
+                .infoS {
+                    .infoCard {
+                        display: flex;
+                        gap: 2vw;
+                    }
+                }
+            }
+        }
+
+        #skill {
+            height: auto;
+            margin-bottom: 15vh;
+        }
+
+        #project {
+            height: auto;
+            margin-bottom: 15vh;
+
+            .projects {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5vw;
+            }
+        }
+
+        #contact {
+            height: auto;
+            width: auto;
+
+            .contactInfo {
+                .moreContact {
+                    padding: 2vw;
+                    display: flex;
+                    gap: 1vw;
+                    flex-wrap: wrap;
+                    .textMoreContact{
+                        flex: 1;
+                    }
+                    .contactCard {
+                        flex: 1;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+
+        footer {
+            .menu {
+                width: 80vw;
+                display: flex;
+                gap: 15vw;
+                justify-content: center;
+            }
+            .copyr{
+                text-align: center;
+            }
+        }
+    }
+}

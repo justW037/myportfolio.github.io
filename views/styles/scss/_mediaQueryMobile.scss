@@ -1,0 +1,99 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+        overflow: hidden scroll; 
+        width: 90vw;
+        .desktopNav {
+            display: none;
+            .menu-link {
+                display: none;
+            }
+        }
+        #profile {
+            margin-bottom: 120px;
+            height: auto;
+            display: block;
+            justify-content: center;
+            .big-logo {
+                font-size: 10rem;
+                text-align: center;
+                height: fit-content;
+            }
+        }
+        #about {
+            margin-bottom: 100px;
+            height: auto;
+            .info {
+                display: block;
+                width: 100%;
+
+                .test{
+                    display: flex;
+                    justify-content: center;
+                    .aboutImg {
+                        width: auto;
+                        height: 46vw;
+                    }
+                }
+
+                .infoS {
+                    .infoCard {
+                        display: flex;
+                        flex-direction: row;
+                        .about-card{
+                            margin: 20px;
+                            padding: 10px;
+                        }
+                    }
+                    .text-info{
+                        margin: 0px 5px;
+                        text-align: center;
+                    }    
+                }
+            }
+        }
+        #skill{
+            display: block;
+            margin-bottom: 150px;
+            .skillCards{
+                display: flex;
+                flex-wrap: wrap;
+                .skillCard{
+                    height: 65vw;
+                    width: 40vh;
+                    padding: 10px;
+                }
+            }
+        }
+        #project{
+            height: auto;
+            margin-bottom: 100px;
+            .projects{
+                flex-wrap: wrap;
+                margin: 32px;
+            }
+        }
+        #contact{
+            height: auto;
+            .moreContact{
+                .contactCard{
+                   margin: 10px 20px; 
+                   padding: 0px 10vw;
+                }
+            }
+        }
+        footer{
+            .menu{
+                width: 77vw;
+                gap: 10vw;
+                margin: 10px 0px; 
+                padding: 15px 20px;
+                justify-content: center;
+            }
+            .copyr{
+                text-align: center;
+            }
+        }
+    }
+}

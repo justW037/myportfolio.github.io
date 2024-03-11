@@ -1,0 +1,85 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        padding: 20px 50px;
+        margin: 0px 100px;
+        .desktopNav {
+            display: flex;
+            justify-content: space-between;
+            .menu{
+                display: inline-flex;
+                align-items: flex-start;
+                gap: 57px;
+            }
+        }
+        .mobileNav{
+            .logo{
+                display: none;
+            }
+            .drawers{
+                display: none;
+            }
+        }
+
+        #about {
+            .info {
+                display: flex;
+                gap: 64px;
+
+                .aboutImg {
+                    width: 400px;
+                    height: 400px;
+                    flex: 1;
+                }
+
+                .infoS {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .infoCard {
+                        display: flex;
+                        gap: 32px;
+                        margin: 32px 0px;
+                    }
+                }
+            }
+
+        }
+
+        #contact {
+            .contactInfo {
+                display: flex;
+                gap: 20px;
+                .contactForm {
+                    width: 25vw;
+                }
+
+                .moreContact {
+                    .contactCard {
+                        padding: 20px;
+                        margin: 20px 200px 60px 200px;
+                    }
+                }
+            }
+        }
+        footer{
+            .menu{
+                gap: 42px;
+                padding: 10px 25px;
+                margin-left: 22px;
+            }
+            .copyr{
+                display: inline;
+                margin-left: 240px;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//     body{
+//     }
+// }

@@ -1,0 +1,509 @@
+.text-about {
+  text-align: center;
+}
+.text-about .p1 {
+  color: #6B5B41;
+  font-size: 24px;
+}
+.text-about .p2 {
+  color: #98782F;
+  font-weight: 600;
+  font-size: 58px;
+}
+
+.card, html body footer .menu, #contact .contactInfo .moreContact .contactCard, #contact .contactInfo .contactForm, #project .projects .projectCard, #skill .skillCards .skillCard, #about .info .infoS .infoCard .about-card {
+  border-radius: 32px;
+  border-color: #98782F;
+  border-width: 1.6px;
+  border-style: solid;
+  background-color: #1D3331;
+  color: #98782F;
+  flex: 1;
+}
+
+.button, #contact .contactInfo .contactForm .submit, #project .projects .projectCard .buttons .button-1, #profile .moreBtn .dlBtn {
+  align-items: flex-start;
+  border-color: white;
+  background-color: #1D3331;
+  border-radius: 32px;
+  border-style: solid;
+  border-width: 1.6px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 10px;
+  text-align: center;
+}
+.button:hover, #contact .contactInfo .contactForm .submit:hover, #project .projects .projectCard .buttons .button-1:hover, #profile .moreBtn .dlBtn:hover {
+  border-color: #98782F;
+  background-color: #98782F;
+  transition-delay: 0s;
+  color: #1D3331;
+}
+
+.textLink, html body footer .menu .menu-link, html body .desktopNav .menu .menu-link, #contact .contactInfo .moreContact .contactCard .contactLink {
+  color: #98782F;
+  font-size: 20px;
+  text-decoration: none;
+}
+.textLink:hover, html body footer .menu .menu-link:hover, html body .desktopNav .menu .menu-link:hover, #contact .contactInfo .moreContact .contactCard .contactLink:hover {
+  color: #6B5B41;
+  text-decoration: underline;
+}
+
+.hamburgerButton, html body .mobileNav .drawers .drawer {
+  background-color: #98782F;
+  width: 2em;
+  height: 2px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+.hamburgerButton:before, html body .mobileNav .drawers .drawer:before, .hamburgerButton::after, html body .mobileNav .drawers .drawer::after {
+  content: "";
+  position: absolute;
+  background-color: #98782F;
+  width: 2em;
+  height: inherit;
+  border-radius: 10px;
+  transition: inherit;
+}
+.hamburgerButton::before, html body .mobileNav .drawers .drawer::before {
+  transform: translateY(-12px);
+}
+.hamburgerButton::after, html body .mobileNav .drawers .drawer::after {
+  transform: translateY(12px);
+}
+
+#profile {
+  display: flex;
+  gap: 5rem;
+  height: 100vh;
+}
+#profile .big-logo {
+  color: #98782F;
+  font-size: 40vw;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex: 1;
+}
+#profile .section-text {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+#profile .section-text .section-text-1 {
+  color: white;
+  font-weight: 600;
+}
+#profile .section-text .name {
+  color: #98782F;
+  font-size: 48px;
+}
+#profile .section-text .section-text-2 {
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+}
+#profile .moreBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+#about {
+  height: 100vh;
+}
+#about .info .aboutImg {
+  border-radius: 32px;
+}
+#about .info .infoS .infoCard .about-card {
+  padding: 24px;
+  text-align: center;
+}
+#about .info .infoS .infoCard .about-card .titleInfo {
+  font-weight: 700;
+  color: white;
+}
+#about .info .infoS .infoCard .about-card .detail {
+  font-size: 20px;
+}
+#about .info .infoS .text-info {
+  font-size: 23px;
+  color: #98782F;
+}
+
+#skill {
+  height: 100vh;
+}
+#skill .skillCards {
+  display: flex;
+  gap: 30px;
+}
+#skill .skillCards .skillCard {
+  padding: 20px;
+}
+#skill .skillCards .skillCard .cardTitle {
+  text-align: center;
+}
+#skill .skillCards .skillCard .detailCard {
+  color: white;
+  margin: 15px;
+}
+
+#project {
+  height: 100vh;
+}
+#project .projects {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+#project .projects .projectCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 0%;
+  padding: 24px;
+}
+#project .projects .projectCard .projectImg .img {
+  border-radius: 32px;
+  width: 90%;
+}
+#project .projects .projectCard .projectTitle {
+  text-align: center;
+}
+#project .projects .projectCard .buttons {
+  display: flex;
+}
+#project .projects .projectCard .buttons .button-1 {
+  color: #98782F;
+  border-color: #98782F;
+  flex: 1;
+  margin: 0px 20px;
+}
+
+#contact {
+  height: 100vh;
+}
+#contact .contactInfo .contactForm {
+  height: 400px;
+  padding: 30px;
+  margin: 20px;
+}
+#contact .contactInfo .contactForm .formTitle {
+  text-align: center;
+  color: #98782F;
+}
+#contact .contactInfo .contactForm h3 {
+  color: #98782F;
+  font-weight: 100;
+}
+#contact .contactInfo .contactForm .input {
+  background-color: #1D3331;
+  border: 0px;
+  border-bottom: 1px solid #98782F;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  width: 100%;
+}
+#contact .contactInfo .contactForm textarea {
+  resize: none;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+#contact .contactInfo .contactForm .submit {
+  color: #98782F;
+  border-color: #98782F;
+}
+#contact .contactInfo .moreContact {
+  flex: 2;
+}
+#contact .contactInfo .moreContact .textMoreContact {
+  color: #98782F;
+  text-align: center;
+}
+#contact .contactInfo .moreContact .contactCard {
+  text-align: center;
+  border-radius: 25px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 20px;
+    overflow: hidden scroll;
+    width: 90vw;
+  }
+  body .desktopNav {
+    display: none;
+  }
+  body .desktopNav .menu-link {
+    display: none;
+  }
+  body #profile {
+    margin-bottom: 120px;
+    height: auto;
+    display: block;
+    justify-content: center;
+  }
+  body #profile .big-logo {
+    font-size: 10rem;
+    text-align: center;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body #about {
+    margin-bottom: 100px;
+    height: auto;
+  }
+  body #about .info {
+    display: block;
+    width: 100%;
+  }
+  body #about .info .test {
+    display: flex;
+    justify-content: center;
+  }
+  body #about .info .test .aboutImg {
+    width: auto;
+    height: 46vw;
+  }
+  body #about .info .infoS .infoCard {
+    display: flex;
+    flex-direction: row;
+  }
+  body #about .info .infoS .infoCard .about-card {
+    margin: 20px;
+    padding: 10px;
+  }
+  body #about .info .infoS .text-info {
+    margin: 0px 5px;
+    text-align: center;
+  }
+  body #skill {
+    display: block;
+    margin-bottom: 150px;
+  }
+  body #skill .skillCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body #skill .skillCards .skillCard {
+    height: 65vw;
+    width: 40vh;
+    padding: 10px;
+  }
+  body #project {
+    height: auto;
+    margin-bottom: 100px;
+  }
+  body #project .projects {
+    flex-wrap: wrap;
+    margin: 32px;
+  }
+  body #contact {
+    height: auto;
+  }
+  body #contact .moreContact .contactCard {
+    margin: 10px 20px;
+    padding: 0px 10vw;
+  }
+  body footer .menu {
+    width: 77vw;
+    gap: 10vw;
+    margin: 10px 0px;
+    padding: 15px 20px;
+    justify-content: center;
+  }
+  body footer .copyr {
+    text-align: center;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding: 20px 50px;
+    overflow: hidden scroll;
+  }
+  body .desktopNav {
+    display: inline-flex;
+    gap: 20vw;
+  }
+  body .desktopNav .menu {
+    display: inline-flex;
+    gap: 4vw;
+  }
+  body .mobileNav {
+    display: none;
+  }
+  body #profile {
+    width: auto;
+    height: auto;
+    padding: 2vw;
+    margin-bottom: 20vh;
+  }
+  body #profile .big-logo {
+    text-align: center;
+    padding: 23vh 0px;
+  }
+  body #profile .section-text {
+    padding: 10vh 0px;
+  }
+  body #about {
+    height: auto;
+    margin-bottom: 15vh;
+  }
+  body #about .info {
+    display: flex;
+    gap: 5vw;
+  }
+  body #about .info .test {
+    padding: 5em 0px;
+  }
+  body #about .info .test .aboutImg {
+    width: auto;
+    height: 30vw;
+  }
+  body #about .info .infoS .infoCard {
+    display: flex;
+    gap: 2vw;
+  }
+  body #skill {
+    height: auto;
+    margin-bottom: 15vh;
+  }
+  body #project {
+    height: auto;
+    margin-bottom: 15vh;
+  }
+  body #project .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+  }
+  body #contact {
+    height: auto;
+    width: auto;
+  }
+  body #contact .contactInfo .moreContact {
+    padding: 2vw;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+  }
+  body #contact .contactInfo .moreContact .textMoreContact {
+    flex: 1;
+  }
+  body #contact .contactInfo .moreContact .contactCard {
+    flex: 1;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body footer .menu {
+    width: 80vw;
+    display: flex;
+    gap: 15vw;
+    justify-content: center;
+  }
+  body footer .copyr {
+    text-align: center;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    padding: 20px 50px;
+    margin: 0px 100px;
+  }
+  body .desktopNav {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .desktopNav .menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 57px;
+  }
+  body .mobileNav .logo {
+    display: none;
+  }
+  body .mobileNav .drawers {
+    display: none;
+  }
+  body #about .info {
+    display: flex;
+    gap: 64px;
+  }
+  body #about .info .aboutImg {
+    width: 400px;
+    height: 400px;
+    flex: 1;
+  }
+  body #about .info .infoS {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body #about .info .infoS .infoCard {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0px;
+  }
+  body #contact .contactInfo {
+    display: flex;
+    gap: 20px;
+  }
+  body #contact .contactInfo .contactForm {
+    width: 25vw;
+  }
+  body #contact .contactInfo .moreContact .contactCard {
+    padding: 20px;
+    margin: 20px 200px 60px 200px;
+  }
+  body footer .menu {
+    gap: 42px;
+    padding: 10px 25px;
+    margin-left: 22px;
+  }
+  body footer .copyr {
+    display: inline;
+    margin-left: 240px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: #1D3331;
+}
+html body .logo {
+  color: #98782F;
+  font-size: 40px;
+}
+html body .desktopNav .menu {
+  list-style: none;
+}
+html body .mobileNav {
+  display: flex;
+  gap: 55vw;
+}
+html body .mobileNav .drawers {
+  display: flex;
+  align-items: center;
+  z-index: 6;
+}
+html body footer {
+  gap: 20px;
+  color: #98782F;
+  position: relative;
+  top: 100px;
+  bottom: 0px;
+  margin: 20px;
+  padding: 0px;
+  display: inline;
+}
+html body footer .menu {
+  display: inline-flex;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

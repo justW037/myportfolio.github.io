@@ -1,0 +1,41 @@
+#project {
+    height: 100vh;
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        .projectCard {
+            @extend .card;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-basis: 0%;
+            padding: 24px;
+
+            .projectImg {
+                .img {
+                    border-radius: 32px;
+                    width: 90%;
+                    
+                }
+            }
+
+            .projectTitle {
+                text-align: center;
+            }
+
+            .buttons {
+                display: flex;
+                .button-1 {
+                    @extend .button;
+                    color: $second-color;
+                    border-color: $second-color;
+                    flex: 1;
+                    margin: 0px 20px;
+                }
+            }
+        }
+    }
+}

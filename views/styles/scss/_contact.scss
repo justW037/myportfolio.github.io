@@ -1,0 +1,60 @@
+#contact {
+    height: 100vh;
+    .contactInfo {
+
+        .contactForm {
+            height: 400px;
+            @extend .card;
+            padding: 30px;
+            margin: 20px;
+
+            .formTitle {
+                text-align: center;
+                color: $second-color;
+            }
+
+            h3 {
+                color: $second-color;
+                font-weight: 100;
+            }
+
+            .input {
+                background-color: $main-color;
+                border: 0px;
+                border-bottom: 1px solid $second-color;
+                text-decoration: none;
+                font-family: 'Times New Roman', Times, serif;
+                color: white;
+                width: 100%;
+            }
+
+            textarea {
+                resize: none;
+                height: 50px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .submit {
+                @extend .button;
+                color: $second-color;
+                border-color: $second-color;
+            }
+        }
+        .moreContact{
+            flex: 2;
+            .textMoreContact{
+                color: $second-color;
+                text-align: center;
+            }
+            .contactCard{
+                @extend .card;
+                text-align: center;
+                border-radius: 25px;
+                .contactLink {
+                    @extend .textLink;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import './scss/var';
+@import './scss/extends';
+@import './scss/homePage';
+@import './scss/aboutPage';
+@import './scss/skillPage';
+@import './scss/projectPage';
+@import './scss/contact';
+@import './scss/mediaQueryMobile';
+@import './scss/mediaQueryTablet';
+@import './scss/mediaQueryDesktop';
+
+html {
+    scroll-behavior: smooth;
+    body {
+        background-color: $main-color;
+        .logo {
+            color: $second-color;
+            font-size: 40px;
+        }
+        .desktopNav {
+            .menu {
+                
+                list-style: none;
+
+                .menu-link {
+                    @extend .textLink;
+                }
+            }
+        }
+        .mobileNav{
+            display: flex;
+            gap: 55vw;
+            .drawers{
+                display: flex;
+                align-items: center;
+                z-index: 6;
+                .drawer{
+                    @extend .hamburgerButton;
+                }
+            }
+        }
+        footer{
+            gap: 20px;
+            color: $second-color;
+            position: relative;
+            top: 100px;
+            bottom: 0px;
+            margin: 20px;
+            padding: 0px;
+            display: inline;
+            .menu {
+                display: inline-flex; 
+                list-style: none;
+                @extend .card;
+                .menu-link {
+                    @extend .textLink;
+                }
+            }
+           
+        }
+    }
+}

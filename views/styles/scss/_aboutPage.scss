@@ -1,0 +1,31 @@
+#about {
+    height: 100vh;
+
+    .info {
+        .aboutImg{
+            border-radius: 32px;
+        }
+        .infoS {
+            .infoCard {
+                .about-card {
+                    @extend .card;
+                    padding: 24px;
+                    text-align: center;
+                    .titleInfo {
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .detail {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+
+            .text-info {
+                font-size: 23px;
+                color: $second-color;
+            }
+        }
+    }
+}
