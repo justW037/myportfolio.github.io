@@ -1,0 +1,26 @@
+:root{
+    --body-color: rgb(0, 0, 0);
+    --color-white: rgb(59, 59, 59);
+
+    --text-color-second: rgb(255, 255, 255);
+    --text-color-third: rgb(197, 112, 213);
+
+    --first-color: rgb(79, 81, 251);
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(117, 160, 235);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.skill-span {
+    color: var(--text-color-second);
+}
+
+.btn-download {
+    background-color: var(--second-color);
+}
+.btn-download:hover {
+    background-color: var(--text-color-second);
+}
